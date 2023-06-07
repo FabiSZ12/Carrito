@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Box, Button, TextField, Typography } from '@mui/material';
-
+import img from'../carrito.png'
 interface Product {
   name: string;
   description?: string;
@@ -107,7 +107,7 @@ const App = () => {
           </Typography>
         </Box>
       </Box>
-      <img src="C:\Users\FabiSz\Desktop\react-vite-TS\my-app\carrito.png"  alt="Imagen" style={{ position: 'absolute', top: '40px', right: '40px', width: '50px', height: '50px'}} />
+      <img src={img}  alt="Img" style={{ position: 'absolute', top: '40px', right: '40px', width: '50px', height: '50px'}} />
     </Box>
   );
 };
